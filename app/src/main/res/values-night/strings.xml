@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sumatoria">Sumatoria</string>
+    <string name="primer_valor">Primer Valor</string>
+    <string name="segundo_valor">Segundo valor</string>
+    <string name="resultado">Resultado</string>
+    <string name="boton_sumar">boton_sumar</string>
+    <string name="boton_borrar">boton_borrar</string>
+    <string name="boton_salir">boton_salir</string>
+</resources>
