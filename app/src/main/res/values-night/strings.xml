@@ -7,4 +7,6 @@
     <string name="boton_sumar">boton_sumar</string>
     <string name="boton_borrar">boton_borrar</string>
     <string name="boton_salir">boton_salir</string>
+    <string name="resultado_de_la_operacion">Resultado de la operacion</string>
+    <string name="boton_regresar">boton_regresar</string>
 </resources>

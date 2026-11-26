@@ -1,5 +1,6 @@
 package com.example.app01_2026b_suma_maciasenriquesi;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -42,10 +43,17 @@ public class MainActivity extends AppCompatActivity {
             double n1=Double.parseDouble(valor1);
             double n2=Double.parseDouble(valor2);
             double suma=n1+n2;
-            etResultado.setText(String.valueOf(suma));
-            btSumar.setEnabled(false);
-            btBorrar.setEnabled(true);
+            //etResultado.setText(String.valueOf(suma));
+            enviarOperacion("El resultado de la SUMA es: ",""+String.valueOf(suma));
+            //btSumar.setEnabled(false);
+            //btBorrar.setEnabled(true);
         }
+    }
+    public void enviarOperacion(String cab,String res){
+        Intent resulta=new Intent(getApplicationContext(),MainActivity2.class);
+        resulta.putExtra("Cabecera",cab);
+        resulta.putExtra("Resultado",res);
+        startActivity(resulta);
     }
     public void borrar(View view)
     {
